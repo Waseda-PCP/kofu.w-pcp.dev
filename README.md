@@ -42,6 +42,7 @@ npm start
 ## Development (Design)
 
 基本的なデザインは `src/app/global.scss` に sass 形式で保存してあります。
-必要に応じて、ページに対して `page.module.css` が追加できます。
+必要に応じて、ページに対して `page.module.scss` が追加できます。
+css 形式の使用は可能な限り控えてください。
 
 多用される要素については、コンポーネントを作成してください。
