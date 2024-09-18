@@ -1,0 +1,85 @@
+body,
+:root {
+
+	margin: 0;
+	padding: 0;
+
+	font-family: Arial, sans-serif;
+	line-height: 1.075;
+
+}
+
+header {
+
+	padding: .5rem .8rem;
+
+	background-color: #eee;
+
+	* {
+
+		display: inline;
+		padding: 0 .5rem;
+
+	}
+
+}
+
+main {
+
+	padding: 1rem;
+
+}
+
+h1,
+h2 {
+
+	color: #333;
+
+}
+
+h1 {
+
+	font-size: 22pt;
+
+}
+
+h2 {
+
+	font-size: 18pt;
+
+}
+
+p {
+
+	color: #444;
+	font-size: 14pt;
+
+}
+
+.sp {
+
+	display: initial;
+
+}
+
+.pc {
+
+	display: none;
+
+}
+
+@media (min-width: 768px) {
+
+	.sp {
+
+		display: none;
+
+	}
+
+	.pc {
+
+		display: initial;
+
+	}
+
+}
