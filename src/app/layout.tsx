@@ -4,7 +4,17 @@ import './global.scss'
 export const metadata: Metadata = {
   title: '興風祭 / PCプログラミング部',
   description: '早稲田中学校・高等学校のPCプログラミング部の 興風祭特設 公式ホームページです。',
-  keywords: ['早稲田中学校', '早稲田高等学校', 'PCプログラミング部', '興風祭', 'W-PCP'],
+  keywords: ['早稲田', '早稲田中学校', '早稲田高等学校', 'PCプログラミング部', '興風祭', 'W-PCP'],
+  authors: [
+    {
+      name: '早稲田中学校・高等学校',
+      url: 'https://www.w-pcp.dev/',
+    }
+  ],
+  abstract: "早稲田中学校・高等学校のPCプログラミング部の 興風祭特設 公式ホームページです。",
+  creator: "Yama.can / W-PCP",
+  publisher: "W-PCP",
+  referrer: 'strict-origin-when-cross-origin',
 }
 
 export default function RootLayout({
@@ -41,12 +51,6 @@ export default function RootLayout({
           <div className='pc'>
 
             <a href={`/${new Date().getFullYear()}`}>今年の興風祭（{new Date().getFullYear()}年度）</a>
-
-            |
-
-            過去の興風祭
-
-            <a href="https://w-pcp-site-v3.vercel.app/kofu">2023年度</a>
 
           </div>
 
