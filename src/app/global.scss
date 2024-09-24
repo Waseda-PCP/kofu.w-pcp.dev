@@ -1,39 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap');
+
 body,
 :root {
 
 	margin: 0;
 	padding: 0;
 
-	font-family: Arial, sans-serif;
+	font-family: "Zen Kaku Gothic Antique", serif;
 	line-height: 1.075;
 
+	color: #333;
+	user-select: none;
 }
 
 header {
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 52px;
+	user-select: none;
 
-	padding: .5rem .8rem;
+	padding: 1.5rem 0rem;
 
-	background-color: #eee;
+	background-color: #0000;
+	backdrop-filter: blur(4px);
+
+	display: flex;
 
 	* {
 
-		display: inline;
-		padding: 0 .5rem;
+		color: #157781;
+		text-decoration: none;
 
+	}
+
+	.logo {
+		width: 110px;
+		margin-left: 32px;
+		margin-right: auto;
+		margin-top: auto;
+		margin-bottom: auto;
+		font-size: 32px;
+		font-weight: 600;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		p {
+			margin: 0;
+			font-size: 16px;
+			font-weight: 400;
+		}
+	}
+
+	.menu {
+		display: none;
+		align-items: center;
+		font-weight: 400;
+
+		* {
+			margin: 0 16px;
+		}
+	}
+
+	.hamburger {
+		width: 48px;
+		height: 48px;
+		border-radius: 48px;
+		box-shadow: 0 0 4px #0006;
+		background-color: #157781;
+		margin-left: auto;
+		margin-right: 32px;
+		margin-top: auto;
+		margin-bottom: auto;
+
+		color: #fff;
+		text-align: center;
+		font-size: 24px;
+		line-height: 45px;
 	}
 
 }
 
-main {
+footer {
+	background-color: #157781;
+	color: #fff;
 
-	padding: 1rem;
+	margin-top: 80px;
+	padding: 64px 20px;
 
+	.footlogo {
+		p {
+			margin: 0;
+			color: #fff;
+			font-size: 16px;
+			font-weight: 400;
+		}
+
+		h2 {
+			margin: 0;
+			color: #fff;
+			font-size: 32px;
+			font-weight: 600;
+		}
+	}
+
+	.links {
+		a {
+			display: block;
+			width: 32px;
+			height: 32px;
+			margin: 10px 10px;
+			border-radius: 32px;
+			border: #fff 2px solid;
+			background-color: #157781;
+			font-size: 24px;
+			text-align: center;
+			line-height: 32px;
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+}
+
+.topimage {
+	user-select: none;
+
+	color: #157781;
+
+	.image-pc {
+		width: 100%;
+		height: 100vh;
+		object-fit: cover;
+	}
+
+	.image-sp {
+		width: 100vw;
+		height: 100vh;
+		object-fit: cover;
+	}
+
+	.image-title {
+		margin: 0;
+		position: absolute;
+		transform: translate(0, -50%);
+		top: 50vh;
+		left: 32px;
+		font-size: 60px;
+		line-height: 96px;
+	}
+
+}
+
+.topcol {
+	margin-top: 80px;
+	margin-left: 20px;
+	margin-right: 20px;
+	width: calc(100vw - 40px);
+
+	h2 {
+		color: #157781;
+		font-size: 32px;
+		line-height: 48px;
+		border-bottom: #157781 2px solid;
+	}
+}
+
+.notfound {
+	margin-top: 100px;
+	margin-bottom: -80px;
+	width: 100%;
+	height: calc(100vh - 100px - 180px);
+	text-align: center;
+	user-select: none;
+	h1 {
+		color: #157781;
+	}
 }
 
 h1,
 h2 {
 
-	color: #333;
+	font-weight: 600;
 
 }
 
@@ -51,7 +201,6 @@ h2 {
 
 p {
 
-	color: #444;
 	font-size: 14pt;
 
 }
@@ -82,4 +231,39 @@ p {
 
 	}
 
+	header {
+		.logo {
+			width: 180px;
+		}
+
+		.menu {
+			margin-left: auto;
+			margin-right: 0;
+			display: flex;
+		}
+
+		.hamburger {
+			margin-left: 32px;
+		}
+	}
+
+	footer {
+		padding: 64px 64px;
+		display: flex;
+
+		.links {
+			margin-left: auto;
+			margin-right: 0;
+		}
+	}
+
+	.topimage .image-title {
+		left: 72px;
+	}
+
+	.topcol {
+		max-width: 960px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
