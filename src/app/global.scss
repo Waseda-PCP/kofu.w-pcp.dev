@@ -7,7 +7,7 @@ body,
 	padding: 0;
 
 	font-family: "Zen Kaku Gothic Antique", serif;
-	line-height: 1.075;
+	line-height: 1.4;
 
 	color: #333;
 	user-select: none;
@@ -175,6 +175,7 @@ footer {
 	height: calc(100vh - 100px - 180px);
 	text-align: center;
 	user-select: none;
+
 	h1 {
 		color: #157781;
 	}
@@ -266,4 +267,18 @@ p {
 		margin-left: auto;
 		margin-right: auto;
 	}
+}
+
+table {
+
+	border-collapse: collapse;
+	width: 100%;
+
+	td {
+
+		border: 1px solid #333;
+		padding: 8px;
+
+	}
+
 }
