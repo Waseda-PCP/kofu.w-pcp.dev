@@ -123,6 +123,16 @@ footer {
 			text-decoration: none;
 		}
 	}
+
+	a {
+		color: white;
+		text-decoration: none;
+		margin: .5rem;
+	}
+
+	a.block {
+		display: block;
+	}
 }
 
 .topimage {

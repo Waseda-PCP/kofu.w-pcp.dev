@@ -86,6 +86,14 @@ export default function RootLayout({
           <div className="footlogo">
             <p>早稲田中学校・高等学校</p>
             <h2>PCプログラミング部</h2>
+            <h3>Links</h3>
+            <a className="block" href="https://www.youtube.com/watch?v=fjxDzQjeaNs">YouTube (W-PCP)</a>
+            <a className="block" href="https://www.youtube.com/shorts/FvWeI3yxi8o">YouTube Shorts (W-PCP)</a>
+            <a className="block" href="https://x.com/waseda_pcp">X (旧 Twitter)</a>
+            <br />
+            <p>YouTube 及び YouTube Shorts は Google LLC の登録商標です。</p>
+            <p>X 及び Twitter は X Corp. の登録商標です。</p>
+            <p>サイトに問題がある場合は、<a href="mailto:support@w-pcp.dev">support@w-pcp.dev</a> へのご連絡をお願いいたします。</p>
           </div>
         </footer>
 
