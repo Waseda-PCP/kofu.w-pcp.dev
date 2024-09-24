@@ -28,26 +28,22 @@ export default function RootLayout({
 
         <header>
 
-          <h2>興風祭</h2>
-
-          <p>by W-PCP</p>
-
-          <div className='sp'>
-
-            <a href={`/${new Date().getFullYear()}`}>今年の興風祭</a>
-
+          <div className="logo">
+            W-PCP
+            <br />
+            <p>KOFU-FES</p>
           </div>
 
-          <div className='pc'>
+          <div className="menu">
+            <p>PCPについて</p>|
+            <p>展示</p>|
+            <p>アンケート</p>|
+            <p>ゲーム配布</p>|
+            <p>アクセス</p>
+          </div>
 
-            <a href={`/${new Date().getFullYear()}`}>今年の興風祭（{new Date().getFullYear()}年度）</a>
-
-            |
-
-            過去の興風祭
-
-            <a href="https://w-pcp-site-v3.vercel.app/kofu">2023年度</a>
-
+          <div className='hamburger'>
+            ≡
           </div>
 
         </header>
@@ -57,6 +53,13 @@ export default function RootLayout({
           {children}
 
         </main>
+
+        <footer>
+          <div className="footlogo">
+            <p>早稲田中学校・高等学校</p>
+            <h2>PCプログラミング部</h2>
+          </div>
+        </footer>
 
       </body>
 
