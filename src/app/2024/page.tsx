@@ -1,3 +1,9 @@
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+	title: "興風祭 2024 / PCプログラミング部",
+};
+
 export default async function Page() {
 
 	return (
