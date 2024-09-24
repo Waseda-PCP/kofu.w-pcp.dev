@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import './global.scss'
 import jsonLDs from './ld-json'
+import JumpLink from '@/components/jumplink'
 
 export const metadata: Metadata = {
   title: '興風祭 / PCプログラミング部',
@@ -53,18 +54,20 @@ export default function RootLayout({
 
         <header>
 
-          <div className="logo">
-            W-PCP
-            <br />
-            <p>KOFU-FES</p>
-          </div>
+          <a href="/2024">
+            <div className="logo">
+              W-PCP
+              <br />
+              <p>KOFU-FES</p>
+            </div>
+          </a>
 
           <div className="menu">
-            <p><a href="/2024#about-pcp">PCPについて</a></p>|
-            <p><a href="/2024#contents">展示</a></p>|
-            <p><a href="/2024#enquetes">アンケート</a></p>|
-            <p><a href="/2024#games">ゲーム配布</a></p>|
-            <p><a href="/2024#access">アクセス</a></p>
+            <p><JumpLink href="/2024#about-pcp">PCPについて</JumpLink></p>|
+            <p><JumpLink href="/2024#contents">展示</JumpLink></p>|
+            <p><JumpLink href="/2024#enquetes">アンケート</JumpLink></p>|
+            <p><JumpLink href="/2024#games">ゲーム配布</JumpLink></p>|
+            <p><JumpLink href="/2024#access">アクセス</JumpLink></p>
           </div>
 
           <div className='hamburger'>
