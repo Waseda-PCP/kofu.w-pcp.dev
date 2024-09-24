@@ -60,11 +60,11 @@ export default function RootLayout({
           </div>
 
           <div className="menu">
-            <p>PCPについて</p>|
-            <p>展示</p>|
-            <p>アンケート</p>|
-            <p>ゲーム配布</p>|
-            <p>アクセス</p>
+            <p><a href="/2024#about-pcp">PCPについて</a></p>|
+            <p><a href="/2024#contents">展示</a></p>|
+            <p><a href="/2024#enquetes">アンケート</a></p>|
+            <p><a href="/2024#games">ゲーム配布</a></p>|
+            <p><a href="/2024#access">アクセス</a></p>
           </div>
 
           <div className='hamburger'>
