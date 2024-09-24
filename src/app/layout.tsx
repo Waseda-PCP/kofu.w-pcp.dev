@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import './global.scss'
+import jsonLDs from './ld-json'
 
 export const metadata: Metadata = {
   title: '興風祭 / PCプログラミング部',
@@ -21,6 +22,20 @@ export default function RootLayout({
 
         <meta charSet='utf-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
+
+        {
+          jsonLDs.map((jsonLD, index) =>
+            <script
+              key={index}
+              type="application/ld+json"
+              dangerouslySetInnerHTML={
+                {
+                  __html: JSON.stringify(jsonLD)
+                }
+              }
+            />
+          )
+        }
 
       </head>
 
