@@ -1,3 +1,9 @@
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+	title: "THE NOT FOUND PAGE / PCプログラミング部",
+}
+
 export default async function NotFound() {
 
 	return (
