@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import './global.scss'
 import jsonLDs from './ld-json'
 import JumpLink from '@/components/jumplink'
+import AsyncCSS from '@/components/asynccss'
 
 export const metadata: Metadata = {
   title: '興風祭 / PCプログラミング部',
@@ -33,6 +34,10 @@ export default function RootLayout({
 
         <meta charSet='utf-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
+
+        <AsyncCSS
+          href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;700&display=swap"
+        />
 
         {
           jsonLDs.map((jsonLD, index) =>
