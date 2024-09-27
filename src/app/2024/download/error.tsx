@@ -18,6 +18,6 @@ export default function Error() {
 
 	});
 
-	return <div id="error">キーワードが違います。</div>;
+	return <div id="error" className="error">キーワードが違います。</div>;
 
 }
