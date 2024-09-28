@@ -28,7 +28,7 @@ export default async function Download() {
 
 		fs.appendFileSync("enquete.txt", JSON.stringify(jsonData) + ",\n");
 
-		if (keyword == process.env["2024.keyword"]) {
+		if (keyword.toLowerCase() == process.env["2024.keyword"]) {
 
 			redirect("/2024/download/" + process.env["2024.dlid"]);
 
