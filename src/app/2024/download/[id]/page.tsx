@@ -29,7 +29,8 @@ export default async function DLPage({ params: { id } }: { params: { id: string 
 					このページのリンクは、家族内、友人内のみで共有し、第三者に共有しないでください。
 					また、このリンクにアクセスすることでいつでもダウンロードできるためにリンクのコピーをおすすめします。<br />
 					ゲームは Windows でのみ動作します。<br />
-					各ゲームは zip を展開したあと各フォルダの <code>game.exe</code> をダブルクリックすることで起動します。
+					各ゲームは zip を展開したあと各フォルダの <code>game.exe</code> をダブルクリックすることで起動します。<br />
+					問題等がございましたら PCP の X (旧 Twitter) までお問い合わせください。
 				</p>
 
 				<a href={`/${id}-data.zip`}>ダウンロード</a>

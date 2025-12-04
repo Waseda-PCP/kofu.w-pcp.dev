@@ -3,6 +3,8 @@ import './global.scss'
 import jsonLDs from './ld-json'
 import JumpLink from '@/components/jumplink'
 import AsyncCSS from '@/components/asynccss'
+import React from 'react'
+import Menu from '@/components/menu'
 
 export const metadata: Metadata = {
   title: '興風祭 / PCプログラミング部',
@@ -67,13 +69,7 @@ export default function RootLayout({
             </div>
           </a>
 
-          <div className="menu">
-            <p><JumpLink href="/2024#about-pcp">PCPについて</JumpLink></p>|
-            <p><JumpLink href="/2024#contents">展示</JumpLink></p>|
-            <p><JumpLink href="/2024#enquetes">アンケート</JumpLink></p>|
-            <p><JumpLink href="/2024#games">ゲーム配布</JumpLink></p>|
-            <p><JumpLink href="/2024#access">アクセス</JumpLink></p>
-          </div>
+          <Menu />
 
           <div className='hamburger'>
             ≡

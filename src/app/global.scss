@@ -12,6 +12,9 @@ body,
 }
 
 header {
+
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
 	z-index: 1000;
 	position: fixed;
 	top: 0;
@@ -322,5 +325,11 @@ option {
 
 	font-size: 20pt;
 	color: red;
+
+}
+
+main:not(:has(.topimage))>*:first-child {
+
+	margin-top: 140px;
 
 }
